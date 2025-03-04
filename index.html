@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="TBD">
+        content="LiHRA: A LiDAR-Based HRI Dataset for Automated Risk Monitoring Methods">
   <meta name="keywords" content="LiHRA, Risk Assessment, HRI">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TBD</title>
+  <title>LiHRA: A LiDAR-Based HRI Dataset for Automated Risk Monitoring Methods</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -47,7 +47,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">TBD</h1>
+          <h1 class="title is-1 publication-title">LiHRA: A LiDAR-Based HRI Dataset for Automated Risk Monitoring Methods</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               Frederik Plahl<sup>1,2</sup>,</span>
@@ -61,7 +61,7 @@
             </span>
           </div>
 
-          <div class="is-size-5 publication-authors">
+          <div class="is-size-6 publication-authors">
             <span class="author-block"><sup>1</sup>Proximity Robotics & Automation GmbH,</span>
             <span class="author-block"><sup>2</sup>University of Stuttgart - Institute of Industrial Automation and Software Engineering</span>
           </div>
@@ -69,7 +69,7 @@
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://0.0.0.0"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -77,8 +77,8 @@
                   </span>
                   <span>Paper</span>
                 </a>
-              </span>
-              <span class="link-block">
+              </span> -->
+              <!-- <span class="link-block">
                 <a href="https://0.0.0.0"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -86,7 +86,7 @@
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span>
+              </span> -->
               <!-- Dataset Link. -->
               <span class="link-block">
                 <a href="0.0.0.0"
@@ -113,7 +113,11 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            TBD Abstract
+            We present LiHRA, a novel dataset designed to facilitate the development of automated, learning based or classical Risk Monitoring (RM) methods for Human-Robot Interaction (HRI) scenarios. The growing prevalence of collaborative robots in industrial environments has heightened the need for reliable safety systems. However, the lack of high-quality datasets capturing realistic human-robot interactions, including potentially hazardous events, slows the development. LiHRA addresses this challenge by providing a comprehensive, multi-modal dataset combining 3D LiDAR point clouds, human body keypoints, and robot joint states, capturing the complete spatial and dynamic context of human-robot collaboration.
+            The dataset is collected using a Seyond Falcon Kinetic image-grade 3D LiDAR, a Franka Emika Robot (FER), and a Motion Capture (MoCap) system built with HTC VIVE Tracker 3.0 sensors, ensuring sub-centimeter accuracy of human limb positions. This combination of modalities allows precise tracking of human movement, robot actions, and environmental conditions, enabling accurate risk monitoring during collaborative tasks.
+            The LiHRA dataset covers six representative HRI scenarios involving collaborative and coexistent tasks, object handovers, and surface polishing, with both safe and hazardous versions of each scenario. In total, the dataset includes 3754 labeled point clouds recorded at approximately 10 Hz, providing a rich resource for training and benchmarking both classical and AI-driven RM algorithms.
+            To demonstrate LiHRA's utility, we introduce an RM method that quantifies the risk level in each scenario over time. This method leverages contextual information, including robot states, and robot dynamic model.
+            With its combination of high-resolution LiDAR data, precise human tracking, robot state data, and realistic collision events, LiHRA offers an essential foundation for future research into real-time risk monitoring and adaptive safety strategies in human-robot workspaces.
           </p>
         </div>
       </div>
@@ -121,7 +125,7 @@
     <!--/ Abstract. -->
 
     <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
+    <!-- <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
@@ -129,7 +133,7 @@
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
-    </div>
+    </div> -->
     <!--/ Paper video. -->
   </div>
 </section>
@@ -142,7 +146,7 @@
               <h2 class="title is-3">The LiHRA Dataset</h2>
               <div class="content has-text-justified">
                   <p>
-                      TBD
+                    LiHRA is a novel LiDAR-based dataset designed for automated Risk Monitoring (RM) in Human-Robot Interaction (HRI). It provides 3D LiDAR point clouds, human keypoints, and robot joint states, capturing real-world HRI dynamics. The dataset includes safety-critical scenarios, such as object handovers and shared workspace interactions, featuring both intentional contacts and unintentional collisions to support risk monitoring and mitigation research.
                   </p>
               </div>
               <div class="publication-links">
@@ -169,8 +173,17 @@
               <div class="content feature-list">
                   <h4>Dataset</h4>
                   <ul>
-                      <li>TBD</li>
-                  </ul>
+                    <li>6 Scenarios</li>
+                    <ul>
+                      <li>Collaboration (Dangerous, Non-Dangerous)</li>
+                      <li>Object Handover (Dangerous, Non-Dangerous)</li>
+                      <li>Coexistence (Dangerous, Non-Dangerous)</li>
+                    </ul>
+                    <li>3754 Point Clouds</li>
+                    <li>Robot Joint States</li>
+                    <li>Robot ROS 2 tf-Frames</li>
+                    <li>Human Keypoints as ROS 2 tf-Frames</li>
+                </ul>
               </div>
               <div class="content feature-list">
                   <h4>Hardware</h4>
@@ -189,7 +202,7 @@
               </div>
           </div>
           <div class="column">
-              <img src="static/images/todo.png">
+              <img src="static/images/teaser.png">
           </div>
       </div>
 </section>
@@ -205,23 +218,22 @@
 
 <footer class="footer">
   <div class="container">
-    <div class="content has-text-centered">
+    <div class="content has-text-centered has-text-centered">
       <a class="icon-link" href="https://github.com/ProximityRobotics" class="external-link" disabled>
         <i class="fab fa-github"></i>
       </a>
     </div>
-    <div class="columns is-centered">
+    <div class="columns is-centered has-text-centered">
       <div class="column is-8">
-        <div class="content">
-          <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            Website code based on <a
-              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
-          </p>
+        <div class="content is-size-7">
+          <div class="content">
+            <p>
+              This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+            <p>
+              Website code based on <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+            </p>
+          </div>
         </div>
       </div>
     </div>
