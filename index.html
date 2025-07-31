@@ -113,11 +113,11 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present LiHRA, a novel dataset designed to facilitate the development of automated, learning based or classical Risk Monitoring (RM) methods for Human-Robot Interaction (HRI) scenarios. The growing prevalence of collaborative robots in industrial environments has heightened the need for reliable safety systems. However, the lack of high-quality datasets capturing realistic human-robot interactions, including potentially hazardous events, slows the development. LiHRA addresses this challenge by providing a comprehensive, multi-modal dataset combining 3D LiDAR point clouds, human body keypoints, and robot joint states, capturing the complete spatial and dynamic context of human-robot collaboration.
-            The dataset is collected using a Seyond Falcon Kinetic image-grade 3D LiDAR, a Franka Emika Robot (FER), and a Motion Capture (MoCap) system built with HTC VIVE Tracker 3.0 sensors, ensuring sub-centimeter accuracy of human limb positions. This combination of modalities allows precise tracking of human movement, robot actions, and environmental conditions, enabling accurate risk monitoring during collaborative tasks.
-            The LiHRA dataset covers six representative HRI scenarios involving collaborative and coexistent tasks, object handovers, and surface polishing, with both safe and hazardous versions of each scenario. In total, the dataset includes 3754 labeled point clouds recorded at approximately 10 Hz, providing a rich resource for training and benchmarking both classical and AI-driven RM algorithms.
-            To demonstrate LiHRA's utility, we introduce an RM method that quantifies the risk level in each scenario over time. This method leverages contextual information, including robot states, and robot dynamic model.
-            With its combination of high-resolution LiDAR data, precise human tracking, robot state data, and realistic collision events, LiHRA offers an essential foundation for future research into real-time risk monitoring and adaptive safety strategies in human-robot workspaces.
+            We present LiHRA, a novel dataset designed to facilitate the development of automated, learning-based, or classical risk monitoring (RM) methods for Human-Robot Interaction (HRI) scenarios. The growing prevalence of collaborative robots in industrial environments has increased the need for reliable safety systems. However, the lack of high-quality datasets that capture realistic human-robot interactions, including potentially dangerous events, slows development. LiHRA addresses this challenge by providing a comprehensive, multi-modal dataset combining 3D LiDAR point clouds, human body keypoints, and robot joint states, capturing the complete spatial and dynamic context of human-robot collaboration.
+            This combination of modalities allows for precise tracking of human movement, robot actions, and environmental conditions, enabling accurate RM during collaborative tasks.
+            The LiHRA dataset covers six representative HRI scenarios involving collaborative and coexistent tasks, object handovers, and surface polishing, with safe and hazardous versions of each scenario. In total, the data set includes 4,431 labeled point clouds recorded at 10 Hz, providing a rich resource for training and benchmarking classical and AI-driven RM algorithms.
+            Finally, to demonstrate LiHRA's utility, we introduce an RM method that quantifies the risk level in each scenario over time. This method leverages contextual information, including robot states and the dynamic model of the robot.
+            With its combination of high-resolution LiDAR data, precise human tracking, robot state data, and realistic collision events, LiHRA offers an essential foundation for future research into real-time RM and adaptive safety strategies in human-robot workspaces.
           </p>
         </div>
       </div>
@@ -149,7 +149,7 @@
                     LiHRA is a novel LiDAR-based dataset designed for automated Risk Monitoring (RM) in Human-Robot Interaction (HRI). It provides 3D LiDAR point clouds, human keypoints, and robot joint states, capturing real-world HRI dynamics. The dataset includes safety-critical scenarios, such as object handovers and shared workspace interactions, featuring both intentional contacts and unintentional collisions to support risk monitoring and mitigation research.
                   </p>
                   <p>
-                    For downloading the dataset, you need to use the password <code>LiHRA-2025</code>. Please note that the dataset is provided for research purposes only and should not be used for commercial purposes.
+                    Please note that the dataset is provided for research purposes only and should not be used for commercial purposes.
                   </p>
               </div>
               <div class="publication-links">
@@ -199,7 +199,7 @@
               <div class="content feature-list">
                   <h4>Annotations</h4>
                   <ul>
-                      <li>15 Human Keypoints</li>
+                      <li>5 Human Keypoints</li>
                       <li>Robot Joint States</li>
                   </ul>
               </div>
